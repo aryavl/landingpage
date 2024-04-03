@@ -29,3 +29,6 @@ li{
 .ul__style{
   @apply absolute top-full left-0 bg-white shadow-md py-3 px-4 w-[130px] text-center flex flex-col gap-1 z-10
 }
+.border__style{
+  box-shadow: -2px 4px 6px 1px #d8d8d8;
+}
