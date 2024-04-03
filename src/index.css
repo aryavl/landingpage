@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+  @apply w-[80%] flex mx-auto
+}
+.dflex{
+  @apply flex gap-2 items-center
+}
