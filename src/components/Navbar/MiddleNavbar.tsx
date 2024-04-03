@@ -1,9 +1,10 @@
 import SearchIcon from "@mui/icons-material/Search";
+
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 const MiddleNavbar = () => {
   return (
-    <div className="container py-4 justify-between">
+    <div className="container__style py-4 justify-between">
       <div className="dflex">
         <div className="w-[20px] cursor-pointer">
           <img src="/images/plant 1.png" alt="" className="w-[100%]" />
@@ -22,7 +23,8 @@ const MiddleNavbar = () => {
             <input
               type="text"
               id="search-navbar"
-              className="block w-full p-2 ps-10 text-sm border border-gray-300 rounded-l-lg placeholder-gray-500 "
+              className="block w-full p-2 ps-10 text-sm border border-gray-300 rounded-l-lg placeholder-gray-500 focus:outline-none"
+              
               placeholder="Search..."
             />
           </div>

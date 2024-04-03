@@ -2,7 +2,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Topnavbar = () => {
   return (
-    <div className='container mt-[5px] justify-between items-center text-gray-500 text-[15px] '>
+    <div className='container__style mt-[5px] justify-between items-center text-gray-500 text-[15px] '>
         <div className="flex gap-4">
             <a href="#">
             Eng 

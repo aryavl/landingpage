@@ -13,7 +13,7 @@ const BottomNavbar = () => {
 
   return (
     <>
-    <div className="container flex items-center justify-between py-2">
+    <div className="container__style flex items-center justify-between py-2">
                 <a href="#" className="text-white md:hidden" onClick={()=>setShowMenu(prev=>!prev)}>
                       {showMenu ? "": <ListOutlinedIcon />}
                   </a>
@@ -89,12 +89,12 @@ const BottomNavbar = () => {
 
      {
             showMenu && (
-                <div className={`${showMenu ? 'opacity-100' : 'opacity-0'}  fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 transition-opacity duration-300`} onClick={()=>setShowMenu(prev=>!prev)}>
+                <div className={`${showMenu ? 'opacity-100' : 'opacity-0'}  fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 transition-opacity duration-300 z-[999999] `} onClick={()=>setShowMenu(prev=>!prev)}>
                     <div className='w-[50%] h-[100%] border bg-black flex px-6 py-6'>
-                <a href="" className='absolute top-[10px] left-[45%]' onClick={()=>setShowMenu(prev=>!prev)}>
+                <a href="" className='absolute sm:top-[10px]  left-[40%] sm:left-[45%]' onClick={()=>setShowMenu(prev=>!prev)}>
                     <CloseOutlinedIcon/>
                 </a>
-                <div className='flex flex-col justify-between'>
+                <div className='flex flex-col justify-between mt-5'>
             <ul className=" gap-6 text-[14px] text-gray-300 relative flex flex-col">
             <li 
               onMouseEnter={() => setShowHomeDropdown(true)}
