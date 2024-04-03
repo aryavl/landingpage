@@ -1,0 +1,4 @@
+.bgNav{
+    background: linear-gradient(90deg, rgba(34,35,36,1) 2%, rgba(64,64,65,1) 29%, rgba(64,64,65,1) 69%, rgba(34,35,36,1) 98%);
+    @apply text-white
+}
