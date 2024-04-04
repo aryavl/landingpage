@@ -1,4 +1,4 @@
-import React from 'react'
+
 import MainHero from './Hero/MainHero'
 import SubHero from './Hero/SubHero'
 
