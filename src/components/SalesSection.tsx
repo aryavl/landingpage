@@ -9,7 +9,7 @@ const SalesSection = () => {
 
         <img src="/images/p1.png" alt="" className="w-full h-full"/>
             </div>
-        <div className="flex flex-col gap-4 text-white w-[80%] py-6">
+        <div className="flex flex-col gap-4 text-white w-[100%]  md:w-[80%] py-6">
             <h1 className='uppercase'>Summer Sale</h1>
             <h2 className="text-[28px]">
                  
@@ -19,8 +19,8 @@ const SalesSection = () => {
                   OFF
                 </h2>
                 <p className="text-[#FFFFFF] text-[14px]">Free on all your order, Free Shipping and  30 days money-back guarantee</p>
-                <div className="bg-[#1B96DC] rounded-full w-[40%]">
-                <button className=" text-[16px]   rounded-full flex items-center justify-between gap-3 text-white px-4 py-1">Shop Now
+                <div className="bg-[#1B96DC] rounded-full w-[100%] md:w-[45%]">
+                <button className=" text-[16px] rounded-full flex items-center justify-between gap-3 text-white  px-4 py-1">Shop Now
                
                  <ArrowForwardOutlinedIcon className='text-white mt-[2px]'/>
                  </button>

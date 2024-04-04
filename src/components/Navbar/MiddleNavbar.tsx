@@ -16,6 +16,7 @@ const MiddleNavbar: React.FC<MiddleNavbarProps> = ({
   setSearchResult,
 }) => {
   const [input, setInput] = useState("");
+  const [show, setShow] = useState(true);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -33,7 +34,8 @@ const MiddleNavbar: React.FC<MiddleNavbarProps> = ({
 
   const handleInputChange = (value: string) => {
     setInput(value);
-
+   
+    setShow(true)
     const filteredProducts = products.filter((data: { title: string }) =>
       data.title.toLowerCase().includes(value.toLowerCase())
     );
@@ -43,6 +45,8 @@ const MiddleNavbar: React.FC<MiddleNavbarProps> = ({
   };
   const handleSelectSearch = (search: string) => {
     setSearchResult(search);
+    setShow(false)
+    setInput("")
   };
 
   return (
@@ -75,7 +79,7 @@ const MiddleNavbar: React.FC<MiddleNavbarProps> = ({
             Search
           </button>
         </div>
-        {searchProducts.length > 0 && input !== "" && (
+        {searchProducts.length > 0 && input !== "" && show &&(
           <div className="absolute top-12 w-[80%] h-44 bg-white px-4 py-4 z-[9999] border__style overflow-y-auto">
             <ul>
               {searchProducts.map((pdt, index) => (

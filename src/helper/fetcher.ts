@@ -28,7 +28,7 @@ export const getPopularCategories = async () => {
   return categoriesWithImages;
 };
 
-export const getSingleCategories= async(cat:string)=>{
+export const getSingleProduct= async(cat:string)=>{
     const response = await fetch(
         `${baseURL}/products/category/${cat}`
     );

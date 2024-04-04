@@ -2,7 +2,7 @@ import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
 const Section1 = () => {
   return (
-    <div className="container__style">
+    <div className="container__style  ">
       <div className="grid grid-cols-1 sm:grid-cols-3  gap-4 ">
         <div className="bg-white rounded-xl shadow-md overflow-hidden  my-4 cursor-pointer hovercard">
           <div

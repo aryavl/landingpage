@@ -8,6 +8,7 @@ import Sales from "./components/Sales";
 import SalesSection from "./components/SalesSection";
 import Section1 from "./components/Section1";
 import Testimonial from "./components/Testimonial";
+import SearchedProduct from "./components/SearchedProduct";
 
 function App() {
   const [searchProducts, setSearchProducts] = useState<string[]>([]);
@@ -34,7 +35,9 @@ function App() {
           <Section1 />
         </>
       ) : (
-        <div>hello</div>
+        <>
+        <SearchedProduct searchResult={searchResult}/>
+        </>
       )}
 
       <div className="bg-[#F7F7F7]">
