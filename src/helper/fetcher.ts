@@ -40,3 +40,15 @@ export const getSingleCategories= async(cat:string)=>{
     const data = await response.json();
     return data;
 }
+export const getSearchProducts= async()=>{
+    const response = await fetch(
+        `${baseURL}/products`
+    );
+    if (!response.ok) {
+        throw new Error(
+            `Failed to fetch categories. Status: ${response}`
+        );
+    }
+    const data = await response.json();
+    return data;
+}
