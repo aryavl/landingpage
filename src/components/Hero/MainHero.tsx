@@ -9,7 +9,7 @@ const MainHero = () => {
               className="h-full w-full bg-cover rounded-lg"
               style={{
                 backgroundImage:
-                  "url('https://source.unsplash.com/random/1280x720')",
+                  "url('/images/ban1.png')",
                 backgroundRepeat: "no-repeat",
                 objectFit: "cover",
               }}

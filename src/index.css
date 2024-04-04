@@ -32,3 +32,12 @@ li{
 .border__style{
   box-shadow: -2px 4px 6px 1px #d8d8d8;
 }
+.salesbg{
+  background:  linear-gradient(90deg, rgba(4,59,11,1) 2%, rgba(4,59,11,1) 29%, rgba(13,91,21,1) 69%, rgba(4,59,11,1) 98%);
+  
+}
+.hovercard:hover{
+  box-shadow: -2px 4px 6px 1px #d8d8d8;
+
+  color: #2C742F;
+}

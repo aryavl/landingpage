@@ -14,7 +14,7 @@ function Card({ items}:PopularCategory) {
       <div className="flex flex-col ">
         <div className="">
           <img
-            className="h-48 w-full object-cover md:w-48"
+            className="h-48 w-full object-cover "
             src={image.image}
             alt={image.name}
           />
