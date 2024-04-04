@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 import { getSearchProducts } from "../helper/fetcher";
 
+interface Product {
+  image: string;
+  title: string;
+}
+
 interface SearchProps {
   searchResult: string;
 }
 
 const SearchedProduct: React.FC<SearchProps> = ({ searchResult }) => {
-  const [products, setProducts] = useState<string[]>([]);
-  const [searchPdt, setSearchPdt] = useState<string[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [searchPdt, setSearchPdt] = useState<Product[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,8 +32,6 @@ const SearchedProduct: React.FC<SearchProps> = ({ searchResult }) => {
     );
     setSearchPdt(filteredProducts);
   }, [products, searchResult]);
-
-  // console.log(searchPdt);a
 
   return (
     <div className="container__style my-12 justify-center">
